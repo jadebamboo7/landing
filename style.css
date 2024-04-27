@@ -1,0 +1,179 @@
+/* style.css */
+body {
+  font-family: Overpass, sans-serif;
+  margin: 0;
+  color: black;   /*#404042;#0D1EC6;*/
+  font-size: 16px; 
+}
+
+h1, h2, h3 {
+  font-family: Chivo;
+  color: #404042;
+}
+
+p {
+  color: #404042;
+  opacity: .7;
+}
+
+.container {
+	width: 800px;
+	margin:auto;
+}
+
+.banner {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 1, 0.9)), url('images/background.jpg');
+	padding: 150px 0;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+
+.banner h1 {
+	color: ghostwhite;
+	font-size: 46px;
+	margin:0;
+}
+
+.banner p {
+	color: antiquewhite;
+	font-size: 24px;
+}
+
+.button-blue {
+	background-color:rgb(51, 153, 255); /*#3399ff*/
+	color: ghostwhite ;
+	padding: 16px 48px;
+	border-radius: 4px;
+	display: inline-block;
+	text-decoration: none;
+	transition: .3s;
+	margin-top: 2px;
+}
+
+.button-blue:hover {
+  	backgroud-color:#0D1EC6;
+  	color: orange;
+}
+
+.card-white {
+	background: white;
+	box-shadow: 0 0 16px rgba(0,0,0,0.2);
+	border-radius: 4 px;
+	width: 200px;
+	text-align: center;
+	padding: 24 px;
+	margin: 10 px;
+}
+.card-white img {
+	width: 180px;
+	height: 180px;
+	object-fit:cover;
+    border-radius: 4px ;
+}
+.card-white h3, .card-white p {
+	margin-bottom:0;
+	text-align: left;
+}
+
+.footer {
+	background-color: black;
+	text-align:center;
+	padding: 24px 0;
+}
+
+.footer p{
+	color:ghostwhite;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16 px;
+}
+
+
+/* 7. [Opt] Design adaptatif  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries*/
+/* Cards media queries */
+@media (max-width:800px) {
+	.cards {
+		grid-template-columns: 300px;
+/*background:darkviolet;*/
+	}
+
+	.card-white {
+		width:auto ;
+	}
+
+	.card-white h3, .card-white p {
+	text-align: center;
+	background: limegreen;
+}
+}
+
+@media (min-width:500px) {
+	.container {
+		width: 400;
+		box-shadow: 10px 10px goldenrod;
+		background: grey;
+	}
+}
+
+@media (min-width:700px) {
+	.container {
+		width: 650;
+		box-shadow: 5px 5px red;
+		background: orangered;
+	}
+}
+
+@media (min-width:1000px) {
+	.container {
+		width: 800;
+		background: hotpink;
+		box-shadow: 10px 10px darkblue;
+		/*box-shadow: 5px 5px green, 10px 10px yellow, 15px 15px red; */
+	}
+}
+
+
+
+/*a {
+  color: #0D1EC6; 
+  font-weight: bolder;
+  text-decoration: none;
+  background-color: ghostwhite;
+  transition: .3s;
+}
+
+a:hover {
+  color: #CE2FAE
+  /* color: rgb(0, 102, 51);*/
+}
+*/
+
+
+
+/*// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: ;
+  font-style: normal;
+}
+
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+h1,h2,h3 {
+  font-family: "Chivo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+*/
